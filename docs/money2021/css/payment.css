@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* reset */
+html,body {height:100%; -webkit-text-size-adjust:none}
+body,div,span,em,strong,select,section,article,nav,footer,header,address,caption,figure,figcaption,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,textarea,input,button,tr,th,td,table {margin:0; padding:0}
+body, button, input, select, textarea, table, th, td {color:#222; font-size:16px; line-height:1.4em; font-family:'Apple SD Gothic Neo','AppleGothic','Droid Sans fallback',sans-serif}
+h1,h2,h3,h4,h5,h6 {font-size:100%}
+ol,ul,li {list-style-type:none}
+img,fieldset {border:0 none; vertical-align:top}
+input,button,select,textarea,label {vertical-align:middle; resize:none; outline:none}
+input,textarea {-webkit-appearance:none; -webkit-border-radius:0}
+input::placeholder, textarea::placeholder {color: #bbb;}
+input[type="checkbox"] {-webkit-appearance:checkbox}
+input[type="radio"] {-webkit-appearance:radio; -webkit-border-radius:10px}
+input[type="button"], input[type="submit"], input[type="reset"] {cursor:pointer}
+button {border:0 none; background:transparent; cursor:pointer}
+i,em,address,optgroup {font-style:normal}
+hr {display:none}
+table {border-collapse:collapse; border-spacing:0}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block}
+legend, .blind {position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:none; overflow:hidden; clip:rect(0 0 0 0); color:transparent}
+caption {overflow:hidden; width:0; height:0; color:transparent; text-indent:-9999px}
+a {color:#222; text-decoration:none}
+
+/* common */
+.align_ct {text-align:center !important}
+.align_lt {text-align:left !important}
+.align_rt {text-align:right !important}
+.ft_point {color:#ff0042; text-decoration:underline}
+.t_layout {display:table; width:100%; table-layout:fixed}
+.t_cell {display:table-cell}
+.mt0 {margin-top:0 ! important;}
+.top_wrap {border-bottom:1px solid #e1e1e1}
+.btn {display:inline-block; box-sizing:border-box; text-decoration:none; vertical-align:middle}
+.btn_submit {min-height:42px; padding:10px 20px; color:#fff; font-weight:bold; font-size:16px}
+.btn_reset {min-height:42px; padding:8px 20px; border:2px solid; font-weight:bold; font-size:16px}
+
+.btn_action {margin-top:30px; text-align:center}
+.btn_action .btn {margin:0 3px}
+
+.inptxt {width:100%; height:34px; padding:0 10px; border:1px solid #e3e3e3; font-size:14px; line-height:34px; box-sizing:border-box}
+.table_form {width:100%}
+.table_form th, .table_form td {padding:8px 0; font-weight:normal; font-size:14px; text-align:left; vertical-align:top}
+.table_form th {padding:15px 0 0}
+.table_form th.wide {width:100%;}
+.table_form td.pd_t {padding-top:13px}
+.table_form .must {vertical-align:-2px}
+.table_form .t_cell {vertical-align:middle}
+.table_form .dash {width:15px; color:#777; font-size:12px; text-align:center}
+.table_form .email .select_mail {width:100%; height:34px; margin-top:10px; border:1px solid #e3e3e3; font-size:14px}
+.table_form .email.active {position:relative; height:34px; padding-right:105px}
+.table_form .email.active .select_mail {position:absolute; top:0; right:0; width:100px; margin-top:0}
+.table_form .email.active .dash + .t_cell {display:none}
+.table_form .email.active .dash {padding-left:4px}
+
+.radio_style:after {content:''; display:block; clear:both}
+.radio_style li {float:left; margin-left:10px}
+.radio_style li:first-child {margin-left:0}
+.radio_style li label {display:inline-block; height:34px; padding:0 10px; border:1px solid #c3c3c3; color:#c3c3c3; font-size:15px; line-height:34px; cursor:pointer; box-sizing:border-box}
+.radio_style li input[type='radio'] {position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:none; overflow:hidden; clip:rect(0 0 0 0); color:transparent}
+.radio_style li input[type='radio']:checked + label {border:1px solid; font-weight:bold}
+
+/* checkbox */
+.checkbox-wrap {margin-top:15px;}
+input[type="checkbox"] {width:16px; height:16px;vertical-align:-2px}
+
+/* layout */
+body {min-width:320px; background:#ececec}
+.wrap {position:relative; width:100%; max-width:640px; min-height:100%; margin:0 auto; background-color:#fff}
+.content {padding:30px 15px 50px; background:#fff}
+.content_tit {margin-bottom:30px; font-size:24px; text-align:center}
+.top_wrap img {width:100%}
+
+/* 신청하기(apply.html) */
+.apply_wrap {padding:20px 5.7% 10px}
+.tit_payment {font-size:24px}
+.tit_payment .sub {display:inline-block; margin-left:20px; font-size:14px; font-weight:normal; vertical-align:3px}
+.tit_payment .sub .require {color:#ff0000}
+.tit_confirm {font-size:24px; text-align:center}
+.confirm_result {display:block; margin-top:60px; font-size:20px; font-weight:normal; text-align:center}
+.agree_wrap {margin-top:40px}
+.agree_wrap .agree_box {overflow:hidden; overflow-y:auto; height:140px; margin-top:10px; padding:10px 15px; font-size:14px; border:1px solid #ddd; box-sizing:border-box}
+.agree_wrap .sub_agree {display:inline-block; margin-top:23px}
+.checkbox_list:after {content:''; clear:both; display:block}
+.checkbox_list .inp_checkbox {display:inline-block; position:static; float:left; width:25%}
+.inp_checkbox {font-size:17px; cursor:pointer}
+.inp_checkbox input[type="checkbox"] {width:20px; height:20px; margin-right:10px; vertical-align:-3px}
+.inp_list >li.checkbox_wrap {padding-left:0}
+.inp_list >li.checkbox_wrap .essential {line-height:44px}
+.inp_list input[type=text], .inp_list input[type=password], .inp_list input[type=email], .inp_list input[type=tel], .inp_list input[type=submit], .inp_list input[type=search] {padding:11px 10px}
+.inp_list {margin-top:30px}
+.inp_list >li {position:relative; padding-left:80px}
+.inp_list >li + li {margin-top:30px}
+.inp_list >li label {position:absolute; top:0; left:0; font-size:17px; line-height:44px}
+.inp_list >li input[type="text"] {width:100%;-webkit-appearance: none;font-family: inherit;border: 1px solid #ddd;box-sizing:border-box}
+.inp_list .essential:after {content:'*'; color:#ff0000}
+.inp_list .tit_notice {padding-left:0; color:#f52828}
+
+/* 신청하기 - 결제(apply_payment.html) */
+.etc {position:relative; margin:10px 0 0px; padding-left:8px; font-size:14px}
+.etc:before {content:'*'; position:absolute; top:2px; left:0;}
+.payment_form {position:relative}
+.payment_form .etc {color:#777; display:inline-block}
+
+.payment_form .top_sel {margin:0 0 30px; font-size:16px}
+.payment_form .top_sel > div + div {margin-top:5px}
+
+.payment_field {font-size:14px}
+.payment_field .fieldset + .fieldset {margin-top:50px}
+.payment_field .tit {font-size:16px; display:inline-block}
+.payment_field .tit + .etc {margin: 0 0 10px 10px}
+.payment_field .form_action {margin-top:30px; padding:20px 0 0; border-top:1px solid #e3e3e3; text-align:center}
+.payment_field .form_action .total_pay {margin-bottom:20px; font-weight:bold; font-size:18px}
+.payment_field .form_action .total_pay strong {margin-left:10px}
+.payment_method:after {content:''; display:block; clear:both}
+.payment_method .radio_style {margin-top:15px}
+.payment_info {margin-top:30px}
+.payment_info .tit {margin-bottom:10px; font-size:15px}
+.payment_info .payment_info_list {font-size:14px}
+.payment_info .payment_info_list li + li {margin-top:5px}
+.bill:after {content:''; display:block; clear:both}
+.bill .tit {float:left; width:90px; padding-top:7px}
+.bill .radio_style {float:left}
+.bill .etc {margin-top:15px}
+.sel_chk input + label {margin-left:3px; letter-spacing:-0.5px}
+.sel_chk > div {display:inline-block; width:54px; height:25px; vertical-align:middle}
+.chk_box > div + div {margin-top:5px}
+.question_area {width:100%; min-height:150px; padding:5px; border:1px solid #e3e3e3; font-size:14px; box-sizing:border-box;}
+.sel_box {width:100%; height:34px; border:1px solid #e3e3e3; font-size:14px}
+
+/* 결제하기 - 결과 */
+.apply_result > p {font-weight:bold; font-size:22px; text-align:center}
+.apply_result .payment_info .payment_info_list {padding:10px 0; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
+p.result_txt {font-size:24px; text-align:center; font-weight:bold; letter-spacing:-1px; color:#0080c3;}
+.result_info {margin:30px 0 0;}
+.result_info .tit {margin-bottom:15px}
+.result_info ul {padding:15px 0 15px 5px; border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3;}
+.result_info ul li {font-size:14px;}
+.result_info ul li + li {margin-top:5px;}
+.result_info p {padding-left:8px; color:#283891; font-size:12px; text-indent:-8px; line-height:18px}
+.result_info ul + p {margin-top:10px;}
+
+/* 신청확인 - 결과 */
+.confirm_result {font-size:22px; line-height:1.4; text-align:center}
+.pd_l {padding-left:10px}
+
+/* 안내문 추가 */
+.info_area {margin-top:20px}
+.info_area.bx-gray {border: 1px solid #ddd;padding: 15px;background-color: #f3f3f3;} 
+.info_area .info_tit {display:block; font-weight:bold}
+.info_area .info_list li {padding-left:10px; text-indent:-10px;}
+.info_area .info_list + .info_tit {margin-top:20px}
+
+/* 개인정보수집 동의 */
+.agree_wrap {margin-top:40px}
+.agree_wrap .agree_box {overflow:hidden; overflow-y:auto; height:140px; margin-top:10px; padding:10px 15px; font-size:14px; border:1px solid #ddd; box-sizing:border-box}
+.agree_wrap .sub_agree {display:inline-block; margin-top:23px}
+
+
+@media all and (max-width:340px) {
+	.radio_style li {margin-left:4px}
+	.tiem_check input + label {margin-left:0}
+}
+@media all and (max-width:359px) {
+	.radio_style li label {padding:0 5px}
+	.table_form .email.active {padding-right:85px}
+	.table_form .email.active .select_mail {width:80px}
+}
+@media all and (min-width:450px) {
+	.table_form .email.active {padding-right:155px}
+	.table_form .email.active .select_mail {width:150px}
+}
+@media all and (min-width:640px) {
+	body, button, input, select, textarea, table, th, td {font-family:'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', '돋움', Dotum, '굴림', Gulim,  Verdana, Arial, sans-serif; letter-spacing:-0.075em}
+
+	.radio_style li label {padding:0 30px; line-height:30px}
+
+	.payment_method h3 {float:left; width:90px; padding-top:5px}
+	.payment_method .radio_style {float:left; margin-top:0}
+
+	.apply_result {letter-spacing:-0.04em}
+
+	.table_form .email {position:relative; height:34px; padding-right:110px}
+	.table_form .email .select_mail {position:absolute; top:0; right:0; width:100px; margin-top:0}
+	.table_form .email.active {padding-right:205px}
+	.table_form .email.active .select_mail {width:200px}
+
+	.payment_field .form_action .total_pay strong,
+	.select_mail,
+	.phone .inptxt,
+	.email .inptxt {letter-spacing:0}
+}
+
+/* 이벤트 배너 */
+.event-banner {margin-bottom:20px;width:100%;text-align:center;background-color: #fff;}
+.event-banner img {width:100%;}
+/* theme */
+.must,
+.txt_primary,
+.payment_form .etc.must:before,
+.payment_info .etc,
+.confirm_result {color:#283891}
+.btn_submit {background-color:#283891}
+.btn_reset,
+.radio_style li input[type='radio']:checked + label {color:#283891; border-color:#283891}
